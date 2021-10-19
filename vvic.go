@@ -19,6 +19,7 @@ func main() {
 		chromedp.UserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36"),
 	)
 	allocCtx, _ := chromedp.NewExecAllocator(context.Background(), opts...)
+	//执行结束时关闭爬虫浏览器并退出
 	//allocCtx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
 	//defer cancel()
 	//标签1
